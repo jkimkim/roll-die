@@ -43,5 +43,9 @@ function clearr() {
 }
 function enter() {
     var variable1 = parseInt(document.getElementById("inputfield1").value);
-    return variable1
+    if (variable1 > 1) {
+        return variable1
+    } else {
+        randomEl.textContent += "Oops that can't be right!" + " "
+    }
 }

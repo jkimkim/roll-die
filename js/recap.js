@@ -46,6 +46,7 @@ function multiply() {
     sum.textContent += multres + " "
 }
 
+//
 let skills = [
     "javaScript",
     "HTML",
@@ -111,6 +112,7 @@ console.log(totalTime)
 //     console.log("Generating certificate...")
 // }
 
+//js operators
 let hasSolvedChallenge = false
 let hasHintsLeft = false
 
@@ -135,6 +137,7 @@ function recommendMovie() {
 }
 
 
+//js objects
 rentCastle = {
     isSuperHost: true,
     head: "live like a king in my Castle",
