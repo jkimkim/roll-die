@@ -1,5 +1,6 @@
 let cards = []
 let hasBlackjack = false
+let start = false
 let isAlive = false
 let messages = ""
 let message_el = document.getElementById("message_el")
@@ -33,6 +34,7 @@ else if (randomNo >= 11){
 
 
 function startGame() {
+    start = true
     isAlive = true
     let firstCard = getRrandomCard()
     let secondCard = getRrandomCard()
@@ -49,6 +51,8 @@ function renderGame() {
     
  if (sum <= 20) {
      messages = "Do you want to draw another card?"
+     isAlive = true
+
      
  }
  else if (sum === 21) {
@@ -57,6 +61,7 @@ function renderGame() {
  }
  else {
      messages = "You're out of the game!"
+     hasBlackjack = false
      isAlive = false
 }
  //cash out
