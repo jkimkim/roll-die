@@ -149,3 +149,17 @@ rentCastle = {
 }
 
 console.log(rentCastle.rating, rentCastle.tags)
+
+//recap_blackjack
+
+let person = {
+    name: "John",
+    age: 23,
+    country: "Kenya"
+}
+
+function logData() {
+    sentence = person.name + " is " + person.age + " years old and lives in " + person.country
+    console.log(sentence)
+}
+logData()
