@@ -163,3 +163,41 @@ function logData() {
     console.log(sentence)
 }
 logData()
+
+//if else recap
+
+let age = 24
+if (age < 6) {
+    console.log("Free")
+}
+else if (age >= 6 && age <= 17) {
+    console.log("child discount")
+}
+else if (age >= 18 && age <= 26) {
+    console.log("student discount")
+}
+else if (age >= 27 && age <= 66) {
+    console.log("full price")
+}
+else {
+    console.log("senior citizen discount")
+}
+
+//for loop and arrays
+
+let largestCountries = ["Tuvalu", "India", "USA", "Indonesia", "Monaco"]
+
+largestCountries.pop("Tuvalu", "Monaco")
+largestCountries.push("Pakistan")
+largestCountries.shift()
+largestCountries.unshift("China")
+
+
+
+for (i = 0; i < largestCountries.length;i++){
+    console.log("- "+largestCountries[i])
+}
+
+
+//logical operators
+
