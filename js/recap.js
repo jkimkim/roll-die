@@ -201,3 +201,40 @@ for (i = 0; i < largestCountries.length;i++){
 
 //logical operators
 
+let dayOfMonth = 15
+let weekDay = "friday"
+if (dayOfMonth === 13 && weekDay === "friday") {
+    console.log("😱😱😱")
+}
+else {
+    console.log("😉😉😉")
+}
+
+// rock paper scissor
+function game() {
+    //version 1
+    let hands = ["Rock", "Paper", "Scissor"]
+    function getRandom() {
+        let randomHand = Math.floor(Math.random() * 3)
+        console.log(randomHand)
+        return hands[randomHand]
+    }
+    console.log(getRandom())
+
+    //version 2
+    let randomHand = Math.floor(Math.random() * 3)
+    console.log(randomHand)
+    function getRandom2() {
+        if (randomHand === 1) {
+            return hands[0]
+        }
+        else if (randomHand === 2) {
+            return hands[1]
+        }
+        else {
+            return hands[2]
+        }
+    }
+    console.log(getRandom2())
+}
+game()
