@@ -238,3 +238,24 @@ function game() {
     console.log(getRandom2())
 }
 game()
+
+//sort fruit function
+
+let fruit = ["🍎", "🥭", "🥭", "🥚", "🥭", "🍎", "🍎"]
+let appleShelf = document.querySelector(".apple-shelf")
+let mangoShelf = document.querySelector(".mango-shelf")
+let otherShelf = document.querySelector(".other-shelf")
+console.log(appleShelf)
+
+function sortFruit() {
+    for (let i = 0; i < fruit.length; i++){
+        if (fruit[i] === "🍎") {
+            appleShelf.textContent += "🍎"
+        } else if (fruit[i] === "🥭") {
+            mangoShelf.textContent += "🥭"
+        } else {
+            otherShelf.textContent += "🥚"
+        }
+    }
+}
+sortFruit()
