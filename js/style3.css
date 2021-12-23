@@ -1,24 +1,29 @@
+*{
+    padding: 10px;
+    margin: 0;
+}
+
 html {
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 body {
-    background-image: url("56.jpg");
     background-size: cover;
     /*Photo by Jonathan Petersson from Pexels*/
     color: blanchedalmond;
 }
 
-button {
+
+button,
+#input-el {
     border: 2px solid;
-    border-color: #fb2544;
+    border-color: #6e0feb;
     border-radius: 10px;
     background: 0 0;
     box-shadow: none;
-    color: #6636cc;
+    color: #000000;
     font-weight: 700;
-    font-size: 16px;
     font-size: 1rem;
     letter-spacing: 1px;
     line-height: 1;
@@ -26,8 +31,6 @@ button {
     text-decoration: none;
     text-transform: uppercase;
     transition: .3s;
-    cursor: pointer;
-    font: optional;
     appearance: auto;
     writing-mode: inherit;
     -webkit-writing-mode: horizontal-tb !important;
@@ -52,6 +55,19 @@ button {
     border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
     border-image: initial;
     padding: .8em 1.6em .8em;
+}
+
+#input-el:hover{
+    cursor: text;
+}
+#input-el{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-bottom: 10px;
+}
+button{
+    font-weight: bold;
 }
 
 h1.random-no,
@@ -116,14 +132,3 @@ a {
     text-decoration: none;
 }
 
-#inputfield1 {
-    padding: 0.7rem;
-    align-items: center;
-    display: flex;
-    margin: 2rem 0;
-    width: 60px;
-    border: 2;
-    border-radius: 10px;
-    border-color: #fb2544;
-    background-color: #ffffff;
-}
