@@ -18,8 +18,10 @@ body {
 button,
 #input-el {
     border: 2px solid;
-    border-color: #dceb0f;
+    border-top-color: #78dbd3;
     border-radius: 10px;
+    border-style: none;
+    border-bottom-color: #06fae6;
     background: 0 0;
     box-shadow: none;
     color: #000000;
@@ -35,7 +37,7 @@ button,
     writing-mode: inherit;
     -webkit-writing-mode: horizontal-tb !important;
     text-rendering: auto;
-    color: -internal-light-dark(black, white);
+    color: -internal-light-dark(rgb(197, 56, 56), rgb(221, 41, 41));
     letter-spacing: normal;
     word-spacing: normal;
     text-transform: none;
@@ -45,14 +47,14 @@ button,
     text-align: center;
     align-items: flex-start;
     cursor: default;
-    background-color: -internal-light-dark(rgb(239, 239, 239), rgb(59, 59, 59));
+    background-color: -internal-light-dark(rgb(221, 39, 39), rgb(226, 37, 37));
     box-sizing: border-box;
     margin: 0em;
     font: 400 13.3333px Arial;
     padding: 1px 6px;
     border-width: 2px;
     border-style: outset;
-    border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+    border-color: -internal-light-dark(rgb(241, 67, 67), rgb(17, 193, 236));
     border-image: initial;
     padding: .8em 1.6em .8em;
 }
@@ -136,6 +138,6 @@ a {
 }
 
 #ul-el {
-    color: rgb(29, 29, 27);
+    color: rgb(66, 66, 54);
     font-weight: bold;
 }
