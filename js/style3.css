@@ -131,7 +131,11 @@ span {
 li {
     border: orchid;
     border-radius: 10px;
-
+    list-style-type: disc;
+}
+ul li::marker{
+    color: red;
+    font-size: 1.5em;
 }
 
 a {
@@ -141,4 +145,5 @@ a {
 #ul-el {
     color: rgb(66, 66, 54);
     font-weight: bold;
+    margin: 10px;
 }

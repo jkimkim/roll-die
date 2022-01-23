@@ -283,4 +283,7 @@ console.log("Total cost : " + fullPrice + " it will arrive in: " + shippingTime)
 
 //dom manipulation from js
 let recap = document.getElementById("container")
-recap.innerHTML += "<button>" + "buy !" + "</button>"
+recap.innerHTML += "<button onclick='thanks()'>" + "buy!" + "</button>"
+function thanks() {
+    recap.innerHTML += "<p> thanks for buying!</p>"
+}
