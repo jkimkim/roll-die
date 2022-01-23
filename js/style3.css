@@ -135,3 +135,7 @@ a {
     text-decoration: none;
 }
 
+#ul-el {
+    color: rgb(29, 29, 27);
+    font-weight: bold;
+}
