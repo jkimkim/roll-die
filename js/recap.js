@@ -280,3 +280,7 @@ shippingTime = "7 - 15 days"
 const fullPrice = basePrice - discount + shippingCost
 
 console.log("Total cost : " + fullPrice + " it will arrive in: " + shippingTime)
+
+//dom manipulation from js
+let recap = document.getElementById("container")
+recap.innerHTML += "<button>" + "buy !" + "</button>"

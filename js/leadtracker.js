@@ -7,9 +7,8 @@ inputBtn.addEventListener("click", function () {
     //push items to array
     myLeads.push(inputEl.value)
     console.log(myLeads)
-    ulEl.textContent = + "- " + myLeads
 })
 //log out items from input
 for (i = 0; i < myLeads.length; i++){
-    ulEl.textContent += "- " + myLeads
+    ulEl.innerHTML += "<li>"+ myLeads[i]  + "</li>"
 }
