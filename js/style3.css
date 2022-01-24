@@ -132,6 +132,7 @@ li {
     border: orchid;
     border-radius: 10px;
     list-style-type: disc;
+   
 }
 ul li::marker{
     color: red;
@@ -146,4 +147,7 @@ a {
     color: rgb(66, 66, 54);
     font-weight: bold;
     margin: 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
 }
