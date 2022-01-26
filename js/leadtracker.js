@@ -1,22 +1,30 @@
 //declare items
-let myLeads = []
-const inputEl = document.getElementById("input-el")
-const inputBtn = document.getElementById("input-btn")
-const ulEl = document.getElementById("ul-el")
+let myLeads = [];
+const inputEl = document.getElementById("input-el");
+const inputBtn = document.getElementById("input-btn");
+const ulEl = document.getElementById("ul-el");
 
 inputBtn.addEventListener("click", function () {
     //push items to array
-    myLeads.push(inputEl.value)
-    inputEl.value=''
-    renderLeads()
-})
+    myLeads.push(inputEl.value);
+    inputEl.value = "";
+    renderLeads();
+});
 //log out items from input
 
 function renderLeads() {
-    let listItems = ""
+    let listItems = "";
     for (let i = 0; i < myLeads.length; i++) {
-        listItems += "<li><a target = '_blank' href='" + myLeads[i]+"' >" + myLeads[i] + "</a><li>"
+        //listItems += "<li><a target = '_blank' href='" + myLeads[i]+"' >" + myLeads[i] + "</a><li>"
+        listItems += `
+        <li>
+            <a target = '_blank' href='${myLeads[i]}' >
+               ${myLeads[i]}
+            </a>
+        <li>
+        `
     }
-    ulEl.innerHTML = listItems
+    ulEl.innerHTML = listItems;
 }
+
 // alt array func foreach

@@ -51,7 +51,7 @@ let skills = [
     "javaScript",
     "HTML",
     "CSS",
-    "Java", 
+    "Java",
     "VB"]
 console.log(skills[1])
 console.log(skills[2])
@@ -86,7 +86,7 @@ console.log(messages)
 //     greetingEl.textContent += sentence[i] + " "
 // }
 
-let randomNumber = Math.floor( Math.random() *6)
+let randomNumber = Math.floor(Math.random() * 6)
 console.log(randomNumber)
 
 // let flooredNumber = Math.floor(3.45632)
@@ -116,10 +116,9 @@ console.log(totalTime)
 let hasSolvedChallenge = false
 let hasHintsLeft = false
 
-if (hasSolvedChallenge === false && hasHintsLeft === false)
-{
+if (hasSolvedChallenge === false && hasHintsLeft === false) {
     showSolution()
-    }
+}
 
 function showSolution() {
     console.log("Showing Solution...")
@@ -128,8 +127,7 @@ function showSolution() {
 let likesStartups = false
 let likesDocumentaries = true
 
-if (likesDocumentaries === true || likesStartups === true)
-{
+if (likesDocumentaries === true || likesStartups === true) {
     recommendMovie()
 }
 function recommendMovie() {
@@ -145,7 +143,7 @@ rentCastle = {
     Location: "Kenya",
     tags: [4 + " Guests", 2 + " Bedrooms", 2 + " Beds"],
     price: "$" + 140 + "/ night",
-   rating: [4.95, 1235 + " reviews"]
+    rating: [4.95, 1235 + " reviews"]
 }
 
 console.log(rentCastle.rating, rentCastle.tags)
@@ -194,8 +192,8 @@ largestCountries.unshift("China")
 
 
 
-for (i = 0; i < largestCountries.length;i++){
-    console.log("- "+largestCountries[i])
+for (i = 0; i < largestCountries.length; i++) {
+    console.log("- " + largestCountries[i])
 }
 
 
@@ -248,7 +246,7 @@ let otherShelf = document.querySelector(".other-shelf")
 console.log(appleShelf)
 
 function sortFruit() {
-    for (let i = 0; i < fruit.length; i++){
+    for (let i = 0; i < fruit.length; i++) {
         if (fruit[i] === "🍎") {
             appleShelf.textContent += "🍎"
         } else if (fruit[i] === "🥭") {
@@ -287,3 +285,11 @@ recap.innerHTML += "<button onclick='thanks()'>" + "buy!" + "</button>"
 function thanks() {
     recap.innerHTML += "<p> thanks for buying!</p>"
 }
+
+//template strings/literals
+const recipient = "James"
+const sender = "John"
+const email = `Hey ${recipient}! 
+How is it going?
+Cheers ${sender}`
+console.log(email)
