@@ -6,12 +6,14 @@
 html {
     display: block;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-width: 400px;
 }
 
 body {
     background-size: cover;
     /*Photo by Jonathan Petersson from Pexels*/
     color: blanchedalmond;
+    min-width: 400px;
 }
 
 
