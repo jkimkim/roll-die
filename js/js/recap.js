@@ -295,4 +295,17 @@ Cheers ${sender}`
 console.log(email)
 
 //access local storage
-localStorage.setItem("John", "Kimiti")
+
+// localStorage.setItem("John", "Kimiti")
+// localStorage.setItem("Joker", "Soft")
+// console.log(localStorage.getItem("Joker"))
+// localStorage.clear()
+
+//storing arrays in local storage
+
+let myArray = '["jkim.tech"]'
+myArray = JSON.parse(myArray)
+myArray.push("jkimtech.tech")
+console.log(myArray)
+myArray = JSON.stringify(myArray)
+console.log(typeof myArray)
