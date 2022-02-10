@@ -58,6 +58,10 @@ button,
     border-image: initial;
     padding: .8em 1.6em .8em;
 }
+#delete-btn{
+    color: red;
+    background-color: pink;
+}
 
 #input-el:hover{
     cursor: text;

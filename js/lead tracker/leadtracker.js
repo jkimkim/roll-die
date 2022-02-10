@@ -9,12 +9,10 @@ let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 // leadsFromLocalStorage = JSON.parse(leadsFromLocalStorage)
 console.log(leadsFromLocalStorage)
 
-
-if (leadsFromLocalStorage > 0) {
+if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
+    renderLeads()
 }
-renderLeads()
-
 
 inputBtn.addEventListener("click", function () {
     //push items to array
