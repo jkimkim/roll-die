@@ -14,10 +14,10 @@ if (leadsFromLocalStorage) {
     renderLeads()
 }
 
-input.addEventListener("keyup", function (event) {
+inputEl.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
         event.preventDefault();
-        document.getElementById("myBtn").click();
+        document.getElementById("input-btn").click();
     }
 });
 
