@@ -310,5 +310,5 @@ console.log(myArray)
 myArray = JSON.stringify(myArray)
 console.log(typeof myArray)
 
-//truthy and falsy statements
+//truthy and falsy values
 
