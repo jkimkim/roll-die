@@ -4,7 +4,7 @@ const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 
-let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+const leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
 // let leadsFromLocalStorage = localStorage.getItem("myLeads")
 // leadsFromLocalStorage = JSON.parse(leadsFromLocalStorage)
 console.log(leadsFromLocalStorage)
@@ -13,6 +13,13 @@ if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
     renderLeads()
 }
+
+input.addEventListener("keyup", function (event) {
+    if (event.keyCode === 13) {
+        event.preventDefault();
+        document.getElementById("myBtn").click();
+    }
+});
 
 inputBtn.addEventListener("click", function () {
     //push items to array
