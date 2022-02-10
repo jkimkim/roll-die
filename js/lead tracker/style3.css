@@ -12,7 +12,8 @@ html {
 body {
     background-size: cover;
     /*Photo by Jonathan Petersson from Pexels*/
-    color: blanchedalmond;
+    background-image: url("img/logo.png");
+    background-size: cover;
     min-width: 400px;
 }
 
