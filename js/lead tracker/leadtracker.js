@@ -4,8 +4,9 @@ const inputEl = document.getElementById("input-el");
 const inputBtn = document.getElementById("input-btn");
 const ulEl = document.getElementById("ul-el");
 
-let leadsFromLocalStorage = localStorage.getItem("myLeads")
-leadsFromLocalStorage = JSON.parse(leadsFromLocalStorage)
+let leadsFromLocalStorage = JSON.parse(localStorage.getItem("myLeads"))
+// let leadsFromLocalStorage = localStorage.getItem("myLeads")
+// leadsFromLocalStorage = JSON.parse(leadsFromLocalStorage)
 console.log(leadsFromLocalStorage)
 
 inputBtn.addEventListener("click", function () {
