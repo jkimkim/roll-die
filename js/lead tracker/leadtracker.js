@@ -15,6 +15,14 @@ if (leadsFromLocalStorage) {
     renderLeads()
 }
 
+deleteEl.addEventListener("dblclick", function () {
+    localStorage.clear()
+    console.log("ouch")
+    myLeads = []
+    ulEl.innerHTML = "";
+    renderLeads()
+})
+
 inputEl.addEventListener("keyup", function (event) {
     if (event.keyCode === 13) {
         event.preventDefault();
