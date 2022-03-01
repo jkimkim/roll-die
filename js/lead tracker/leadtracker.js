@@ -12,7 +12,22 @@ console.log(leadsFromLocalStorage)
 
 if (leadsFromLocalStorage) {
     myLeads = leadsFromLocalStorage
-    renderLeads()
+    render(myLeads)
+}
+
+function render(leads) {
+    let listItems = "";
+    for (let i = 0; i < leads.length; i++) {
+        //listItems += "<li><a target = '_blank' href='" + myLeads[i]+"' >" + myLeads[i] + "</a><li>"
+        listItems += `
+        <li>
+            <a target = '_blank' href='${leads[i]}' >
+               ${leads[i]}
+            </a>
+        <li>
+        `
+    }
+    ulEl.innerHTML = listItems;
 }
 
 deleteEl.addEventListener("dblclick", function () {
@@ -20,7 +35,7 @@ deleteEl.addEventListener("dblclick", function () {
     console.log("ouch")
     myLeads = []
     ulEl.innerHTML = "";
-    renderLeads()
+    render(myLeads)
 })
 
 inputEl.addEventListener("keyup", function (event) {
@@ -36,23 +51,10 @@ inputBtn.addEventListener("click", function () {
     inputEl.value = "";
     localStorage.setItem("myLeads", JSON.stringify(myLeads))
     console.log(localStorage.getItem(myLeads))
-    renderLeads();
+    render(myLeads);
 });
 //log out items from input
 
-function renderLeads() {
-    let listItems = "";
-    for (let i = 0; i < myLeads.length; i++) {
-        //listItems += "<li><a target = '_blank' href='" + myLeads[i]+"' >" + myLeads[i] + "</a><li>"
-        listItems += `
-        <li>
-            <a target = '_blank' href='${myLeads[i]}' >
-               ${myLeads[i]}
-            </a>
-        <li>
-        `
-    }
-    ulEl.innerHTML = listItems;
-}
+
 
 // alt array func foreach
