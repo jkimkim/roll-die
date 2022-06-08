@@ -312,3 +312,10 @@ console.log(typeof myArray)
 
 //truthy and falsy values
 
+function add(firstno, secno) {
+    let total = firstno + secno
+    return total
+}
+console.log(add(55, 78))
+console.log(add(3, 4))
+console.log(add(9, 102))
