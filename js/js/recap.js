@@ -312,13 +312,14 @@ console.log(typeof myArray)
 
 //truthy and falsy values
 
-function add(firstno, secno) {
-    let total = firstno + secno
-    return total
-}
-console.log(add(55, 78))
-console.log(add(3, 4))
-console.log(add(9, 102))
+//Function parameters
+//               parameters
+const addin = (firstno, secno) => firstno + secno
+
+//           arguments
+console.log(addin(55, 78))
+console.log(addin(3, 4))
+console.log(addin(9, 102))
 
 // Function parameters
 const welcomeEl = document.getElementById('welcome-el')
@@ -333,3 +334,4 @@ function greetUser(greeting, name) {
 //     welcomeEl.textContent = `${greeting} Welcome back,  ${name} 🥰`
 
 greetUser("Howdy!","Kim")
+
