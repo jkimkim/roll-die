@@ -319,3 +319,17 @@ function add(firstno, secno) {
 console.log(add(55, 78))
 console.log(add(3, 4))
 console.log(add(9, 102))
+
+// Function parameters
+const welcomeEl = document.getElementById('welcome-el')
+
+function greetUser(greeting, name) {
+    welcomeEl.textContent = `${greeting} Welcome back,  ${name} 🥰`
+}
+
+//arrow function
+
+// const greetUser = (greeting, name) =>
+//     welcomeEl.textContent = `${greeting} Welcome back,  ${name} 🥰`
+
+greetUser("Howdy!","Kim")
