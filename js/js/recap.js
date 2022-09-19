@@ -335,3 +335,23 @@ function greetUser(greeting, name) {
 
 greetUser("Howdy!","Kim")
 
+
+//js tutorial 2
+console.log(
+    'hello kim'
+  )
+  //varriables
+  //flood = 50
+  //console.log(flood)
+  
+  //user input
+  //fruit = prompt('What is your favorite fruit?')
+  //console.log(fruit)
+  
+  food = Number(prompt('food price?'))
+  tippercentage = Number(prompt('tip %?')) / 100
+  tipAmmount = food * tippercentage
+  total = food + tipAmmount
+  console.log(tipAmmount)
+  console.log(total)
+  
